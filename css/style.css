@@ -1,0 +1,113 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+}
+
+.container-fluid {
+  background-color: #007bff;
+  height: 600px;
+}
+
+.carousel-container {
+  width: 80%;
+  border-radius: 5px;
+  margin: 0 auto;
+  top: 30px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.carousel-wrapper {
+  display: flex;
+  transition: all 0.5s ease;
+}
+
+.carousel-item {
+  min-width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.carousel-image {
+  width: 50%;
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  margin-left: auto; /* Align image to the right */
+}
+
+.carousel-text {
+  font-size: 18px;
+  position: absolute;
+  width: 530px;
+  top: 45px;
+  left: 20px; /* Adjust the left position as needed */
+  transform: translate(0, -50%);
+  background-color: rgba(0, 0, 0, 0.882);
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.carousel-controls {
+  display: flex;
+  justify-content: flex-end; /* Move buttons to the right */
+  margin-top: 50px;
+  margin-right: 142px;
+}
+
+.carousel-button {
+  background-color: #000000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin: 0 10px;
+  border-radius: 5px;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+  .container-fluid {
+    height: 455px;
+  }
+  .carousel-text {
+    font-size: 18px;
+    position: absolute;
+    width: 230px;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.882);
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+
+  .carousel-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    margin-left: auto; /* Align image to the right */
+  }
+
+  .carousel-controls {
+    display: flex;
+    justify-content: flex-end; /* Move buttons to the right */
+    margin-top: 50px;
+    margin-right: 46px;
+  }
+}
